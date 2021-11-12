@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -32,14 +32,23 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
+  height: 100px;
+  /*border: 1px solid #000000;
+  border-radius: 5px;
+  border-width: 1px;
+  */
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border: 1px solid #000000;
+  border-width: 1px;
+}
+
+.schedule {
+  border: 1px solid #000000;
+  border-width: 1px;
 }
 
 .past {
@@ -59,7 +68,9 @@ textarea {
 
 .saveBtn {
   border-left: 1px solid black;
+  border-top: 1px solid #000000;
   border-top-right-radius: 15px;
+  border-bottom: 1px solid #000000;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;

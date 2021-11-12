@@ -1,5 +1,14 @@
-//*Variable declarations: Here is where we store references to DOM Elements*
-//All of these are global and available to the window object (check console)
+// 1. What is today's date in the following format: Jan 1st, 1999?
+var today = moment();
+$("#currentDay").text(today.format("dddd, MMM Do"));
+
+/*
+// 2. What is the day of the week today?
+var dayWeek = today.format("[Today is] dddd");
+$("#2a").text(dayWeek);
+*/
+
+//THIS IS ALL FROM THE PREVIOUS HW
 
 //Input for adding a "To-Do" (text)
 var todoInput = $("#todo-text");
