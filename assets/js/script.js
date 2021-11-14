@@ -20,8 +20,10 @@ for (var calendarHour = 8; calendarHour < 18; calendarHour++) {
   } else {
     currentHour.addClass("future");
   }
-  //Follows functions defined below
-  localStorage.getItem(hourId);
+  //Follows functions defined below; here calendarHour points at the item stored by hourId
+  var textArea = $(currentHour).find("textarea");
+  var savedValue = localStorage.getItem(calendarHour);
+  $(textArea).val(savedValue);
 }
 
 //EVENT LISTENERS (Allows "save" button to save items to localStorage)
@@ -38,13 +40,7 @@ function saveHandler(event) {
   var textArea = $(calendarRow).find("textarea");
   var taskText = textArea.val().trim();
   if (saveButton.is(event.target)) {
-    //Prevents empty text from registering as a calendar event
-    if (taskText === "") {
-      return;
-      //This "else" isn't necessary in this case, but is being left in for clarity
-    } else {
-      //Save text to localStorage by row (hourId)
-      localStorage.setItem(hourId, taskText);
-    }
+    //Save text to localStorage by row (hourId)
+    localStorage.setItem(hourId, taskText);
   }
 }
