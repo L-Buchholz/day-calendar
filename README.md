@@ -21,4 +21,4 @@ The following is a screenshot of the webpage, highlighting its appearance and fu
 
 ## Link to deployed application
 
-The work day scheduler webpage can be found here: [LINKME]
+The work day scheduler webpage can be found here: https://l-buchholz.github.io/day-calendar/
