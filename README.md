@@ -1,24 +1,37 @@
-# Day-Calendar
+# Weather-Dashboard
 
-## Bootcamp homework #5
+## Bootcamp homework #6
 
-An employee requires a responsive work day planner for scheduling tasks. The following "Acceptance Criteria" for this feature were requested and have now been implemented:
+A traveler requires an interactive weather map that allows them to view the current conditions and forecast for multiple cities, so that they can plan accordingly for their trip. The following "Acceptance Criteria" for this feature were requested and have now been implemented:
 
-- When the work day scheduler is opened, the current day is displayed at the top of the calendar.
-- Scrolling down the page presents time blocks for standard business day hours (8:00 a.m. -- 5:00 p.m.).
-- These time blocks are color-coded to indicate whether that hour is in the past, the present, or the future (based on predefined CSS color schemes).
-- Clicking on one of the time blocks enables the user to enter text.
-- There is a "save" button adjacent to each time block. Clicking this button saves the entered text to local storage and displays it back inside the block.
-- When the page is refreshed, all saved events persist.
+- A weather dashboard with form inputs has been created and connects to the OpenWeather API.
+- When a user searches for a city in the form, they are presented with current and future weather conditions for that city.
+- Current conditions include the following:
+  - City name
+  - Current date
+  - An icon representing weather conditions
+  - Temperature
+  - Humidity
+  - Wind speed
+  - A UV index, including a color indicating whether conditions are favorable, moderate, or severe
+- Future conditions -- a 5-day forecast -- include the following:
+  - The date
+  - An icon representing weather conditions
+  - Temperature
+  - Wind speed
+  - Humidity
+- All form entries (city searches) are saved to localStorage as persistent data so that users can select a specific city from a list after refreshing the page.
 
 Additionally, there are no errors in the console when it is inspected using Chrome DevTools and the Javascript includes comments.
 
-## Work Day Scheduler webpage
+## UPDATE -- Weather Dashboard webpage
 
 The following is a screenshot of the webpage, highlighting its appearance and functionality:
 
-![Responsive work day scheduler. This image includes: a header entitled "Work Day Scheduler" with a card including the current date; a card separated into rows for all regular business hours; and adjacent columns for the user to enter and save tasks to each of these hours as needed.](./assets/images/day-calendar-screenshot.jpg)
+![Interactive weather dashboard. This image includes: DETAILS
+a header entitled "Work Day Scheduler" with a card including the current date; a card separated into rows for all regular business hours; and adjacent columns for the user to enter and save tasks to each of these hours as needed.
+](./assets/images/LINKME)
 
-## Link to deployed application
+## UPDATE -- Link to deployed application
 
-The work day scheduler webpage can be found here: https://l-buchholz.github.io/day-calendar/
+The weather dashboard webpage can be found here: LINKME
